@@ -15,6 +15,7 @@
     if ([propertyName isEqualToString:@"totalPage"]||[propertyName isEqualToString:@"channelId"]) {
         return propertyName;
     }
+    //驼峰转下划线 (loveYou-->love_you)
     return [propertyName underlineFromCamel];
 }
 

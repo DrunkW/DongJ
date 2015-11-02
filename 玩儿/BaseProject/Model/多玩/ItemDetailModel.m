@@ -18,6 +18,11 @@
 
 @implementation ItemDetailExtattrsModel
 
+//属性首字母小写->大写
++ (NSString *)replacedKeyFromPropertyName121:(NSString *)propertyName
+{
+    return [propertyName firstCharLower];
+}
 @end
 
 

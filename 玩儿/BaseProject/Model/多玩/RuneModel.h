@@ -11,42 +11,42 @@
 @class RunePurpleModel;
 @interface RuneModel : BaseModel
 
-@property (nonatomic, strong) NSArray<RunePurpleModel *> *Purple;
+@property (nonatomic, strong) NSArray<RunePurpleModel *> *purple;
 
-@property (nonatomic, strong) NSArray<RunePurpleModel *> *Blue;
+@property (nonatomic, strong) NSArray<RunePurpleModel *> *blue;
 
-@property (nonatomic, strong) NSArray<RunePurpleModel *> *Yellow;
+@property (nonatomic, strong) NSArray<RunePurpleModel *> *yellow;
 
-@property (nonatomic, strong) NSArray<RunePurpleModel *> *Red;
+@property (nonatomic, strong) NSArray<RunePurpleModel *> *red;
 
 @end
 @interface RunePurpleModel : NSObject
 
-@property (nonatomic, copy) NSString *Img;
+@property (nonatomic, copy) NSString *img;
 
-@property (nonatomic, copy) NSString *Name;
+@property (nonatomic, copy) NSString *name;
 
 @property (nonatomic, copy) NSString *lev3;
 
-@property (nonatomic, assign) NSInteger Recom;
+@property (nonatomic, assign) NSInteger recom;
 
 @property (nonatomic, copy) NSString *lev2;
 
 @property (nonatomic, assign) NSInteger iplev3;
 
-@property (nonatomic, copy) NSString *Units;
+@property (nonatomic, copy) NSString *units;
 
-@property (nonatomic, assign) NSInteger Type;
+@property (nonatomic, assign) NSInteger type;
 
-@property (nonatomic, copy) NSString *Standby;
+@property (nonatomic, copy) NSString *standby;
 
 @property (nonatomic, copy) NSString *lev1;
 
 @property (nonatomic, assign) NSInteger iplev2;
 
-@property (nonatomic, copy) NSString *Alias;
+@property (nonatomic, copy) NSString *alias;
 
-@property (nonatomic, copy) NSString *Prop;
+@property (nonatomic, copy) NSString *prop;
 
 @property (nonatomic, assign) NSInteger iplev1;
 

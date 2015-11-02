@@ -18,6 +18,8 @@
 @property (nonatomic, strong) NSArray<GiftAModel *> *g;
 
 @end
+
+
 @interface GiftAModel : NSObject
 
 @property (nonatomic, copy) NSString *ID;

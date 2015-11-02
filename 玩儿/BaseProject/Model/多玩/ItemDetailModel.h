@@ -34,8 +34,8 @@
 
 
 @interface ItemDetailExtattrsModel : NSObject
-@property (nonatomic, assign) NSInteger FlatMPPoolMod;
-@property (nonatomic, assign) NSInteger FlatPhysicalDamageMod;
-@property (nonatomic, assign) CGFloat PercentBaseMPRegenMod;
+@property (nonatomic, assign) NSInteger flatMPPoolMod;
+@property (nonatomic, assign) NSInteger flatPhysicalDamageMod;
+@property (nonatomic, assign) CGFloat fercentBaseMPRegenMod;
 @end
 
