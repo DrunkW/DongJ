@@ -10,6 +10,14 @@
 
 @implementation HeroVidoeModel
 
++ (NSString *)replacedKeyFromPropertyName121:(NSString *)propertyName
+{
+    if ([propertyName isEqualToString:@"totalPage"]||[propertyName isEqualToString:@"channelId"]) {
+        return propertyName;
+    }
+    return [propertyName underlineFromCamel];
+}
+
 @end
 
 

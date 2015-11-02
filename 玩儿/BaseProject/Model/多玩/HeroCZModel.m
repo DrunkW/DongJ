@@ -9,7 +9,10 @@
 #import "HeroCZModel.h"
 
 @implementation HeroCZModel
-
++ (NSString *)replacedKeyFromPropertyName121:(NSString *)propertyName
+{
+    return [propertyName underlineFromCamel];
+}
 @end
 
 

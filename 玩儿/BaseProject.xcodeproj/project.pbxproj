@@ -31,6 +31,10 @@
 		85108F9C1BE74BF000A76365 /* HeroVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85108F9B1BE74BF000A76365 /* HeroVideoModel.m */; };
 		85108F9F1BE74CF700A76365 /* HeroCZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85108F9E1BE74CF700A76365 /* HeroCZModel.m */; };
 		85108FA21BE74D7400A76365 /* HeroDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85108FA11BE74D7400A76365 /* HeroDetailModel.m */; };
+		85108FA51BE7592B00A76365 /* HeroGiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85108FA41BE7592B00A76365 /* HeroGiftModel.m */; };
+		85108FA81BE7593F00A76365 /* HeroChangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85108FA71BE7593F00A76365 /* HeroChangeModel.m */; };
+		85108FAB1BE7595400A76365 /* HeroWeekDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85108FAA1BE7595400A76365 /* HeroWeekDataModel.m */; };
+		85108FAE1BE7596E00A76365 /* ToolMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85108FAD1BE7596D00A76365 /* ToolMenuModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +86,14 @@
 		85108F9E1BE74CF700A76365 /* HeroCZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCZModel.m; sourceTree = "<group>"; };
 		85108FA01BE74D7400A76365 /* HeroDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailModel.h; sourceTree = "<group>"; };
 		85108FA11BE74D7400A76365 /* HeroDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailModel.m; sourceTree = "<group>"; };
+		85108FA31BE7592B00A76365 /* HeroGiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroGiftModel.h; sourceTree = "<group>"; };
+		85108FA41BE7592B00A76365 /* HeroGiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroGiftModel.m; sourceTree = "<group>"; };
+		85108FA61BE7593F00A76365 /* HeroChangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroChangeModel.h; sourceTree = "<group>"; };
+		85108FA71BE7593F00A76365 /* HeroChangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroChangeModel.m; sourceTree = "<group>"; };
+		85108FA91BE7595400A76365 /* HeroWeekDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroWeekDataModel.h; sourceTree = "<group>"; };
+		85108FAA1BE7595400A76365 /* HeroWeekDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroWeekDataModel.m; sourceTree = "<group>"; };
+		85108FAC1BE7596D00A76365 /* ToolMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMenuModel.h; sourceTree = "<group>"; };
+		85108FAD1BE7596D00A76365 /* ToolMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolMenuModel.m; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +266,14 @@
 				85108F9E1BE74CF700A76365 /* HeroCZModel.m */,
 				85108FA01BE74D7400A76365 /* HeroDetailModel.h */,
 				85108FA11BE74D7400A76365 /* HeroDetailModel.m */,
+				85108FA31BE7592B00A76365 /* HeroGiftModel.h */,
+				85108FA41BE7592B00A76365 /* HeroGiftModel.m */,
+				85108FA61BE7593F00A76365 /* HeroChangeModel.h */,
+				85108FA71BE7593F00A76365 /* HeroChangeModel.m */,
+				85108FA91BE7595400A76365 /* HeroWeekDataModel.h */,
+				85108FAA1BE7595400A76365 /* HeroWeekDataModel.m */,
+				85108FAC1BE7596D00A76365 /* ToolMenuModel.h */,
+				85108FAD1BE7596D00A76365 /* ToolMenuModel.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -420,13 +440,17 @@
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				85108FA21BE74D7400A76365 /* HeroDetailModel.m in Sources */,
+				85108FAB1BE7595400A76365 /* HeroWeekDataModel.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				85108F8A1BE7456C00A76365 /* RankingListModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				3835CFB71BD90E150024CA48 /* ViewController.m in Sources */,
+				85108FA51BE7592B00A76365 /* HeroGiftModel.m in Sources */,
 				85108F811BE7416500A76365 /* TuWanModel.m in Sources */,
+				85108FA81BE7593F00A76365 /* HeroChangeModel.m in Sources */,
 				85108F8D1BE7457D00A76365 /* AlbumModel.m in Sources */,
 				85108F9C1BE74BF000A76365 /* HeroVideoModel.m in Sources */,
+				85108FAE1BE7596E00A76365 /* ToolMenuModel.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				85108F9F1BE74CF700A76365 /* HeroCZModel.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
