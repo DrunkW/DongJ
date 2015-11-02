@@ -8,6 +8,15 @@
 
 #import "BaseModel.h"
 
+@class ToolMenuModel;
 @interface ToolMenuModel : BaseModel
+@property (nonatomic, copy) NSString *icon;
+
+@property (nonatomic, copy) NSString *name;
+
+@property (nonatomic, copy) NSString *type;
+
+@property (nonatomic, copy) NSString *tag;
 
 @end
+

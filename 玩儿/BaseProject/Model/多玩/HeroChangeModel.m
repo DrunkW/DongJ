@@ -10,4 +10,13 @@
 
 @implementation HeroChangeModel
 
+
++ (NSDictionary *)objectClassInArray{
+    return @{@"changeLog" : [HeroChangeChangelogModel class]};
+}
 @end
+@implementation HeroChangeChangelogModel
+
+@end
+
+
