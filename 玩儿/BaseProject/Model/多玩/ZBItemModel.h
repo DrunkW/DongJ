@@ -11,7 +11,7 @@
 @class ZBItemModel;
 @interface ZBItemModel : BaseModel
 
-@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, assign) NSInteger ID;
 
 @property (nonatomic, copy) NSString *text;
 
