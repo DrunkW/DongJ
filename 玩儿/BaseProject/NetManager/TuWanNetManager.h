@@ -7,6 +7,8 @@
 //
 
 #import "BaseNetManager.h"
+#import "TuWanModel.h"
+
 //只要公用一个解析类的请求,就可以合起来写,只需要使用枚举类型,来决定不同的请求地址即可
 //可以参考汽车之家接口
 typedef NS_ENUM(NSUInteger, TuWanListType) {
@@ -29,6 +31,6 @@ typedef NS_ENUM(NSUInteger, TuWanListType) {
 
 @interface TuWanNetManager : BaseNetManager
 
-
++ (id)getTuWanListType:(TuWanListType)type start:(NSInteger)start completionHandle:(void(^)(TuWanModel *model, NSError *error))completionHandle;
 
 @end
