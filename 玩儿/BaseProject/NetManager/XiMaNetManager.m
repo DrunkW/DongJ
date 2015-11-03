@@ -8,6 +8,36 @@
 
 #import "XiMaNetManager.h"
 
+#define kRankingListPath  @"http://mobile.ximalaya.com/mobile/discovery/v1/rankingList/album"
+#define kAlbumPath   @"http://mobile.ximalaya.com/mobile/others/ca/album/track/%@/true/%@/20"
+
+
+
 @implementation XiMaNetManager
+
++ (id)getRankingListWithPageId:(NSInteger)pageId completionHandle:(void (^)(RankingListModel *, NSError *))completionHandle
+{
+    NSDictionary *params = @{@"device":@"iPhone", @"key":@"ranking:album:played:1:2", @"pageId":@(pageId), @"pageSize": @20, @"position": @0, @"title": @"排行榜"};
+    return [self GET:kRankingListPath parameters:params completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([RankingListModel objectWithKeyValues:responseObj],error);
+    }];
+}
+
+
++ (id)getAlbumWithID:(NSInteger)ID pageID:(NSInteger)pageID completionHandle:(void (^)(AlbumModel *, NSError *))completionHandle
+{
+    NSString *path = [NSString stringWithFormat:kAlbumPath,@(ID), @(pageID)];
+    return [self GET:path parameters:@{@"device":@"iPhone"} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle([AlbumModel objectWithKeyValues:responseObj], error);
+    }];
+}
+
+
+
+
+
+
+
+
 
 @end

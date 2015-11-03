@@ -12,7 +12,7 @@
 
 
 + (NSDictionary *)objectClassInArray{
-    return @{@"list" : [RankingListModel class]};
+    return @{@"list" : [RankingListListModel class]};
 }
 @end
 @implementation RankingListListModel

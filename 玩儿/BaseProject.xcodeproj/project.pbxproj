@@ -124,6 +124,7 @@
 		85F1EEA31BE849B5000254CD /* TuWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanNetManager.m; sourceTree = "<group>"; };
 		85F1EEA51BE849C8000254CD /* XiMaNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaNetManager.h; sourceTree = "<group>"; };
 		85F1EEA61BE849C8000254CD /* XiMaNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaNetManager.m; sourceTree = "<group>"; };
+		85F1EEA91BE8A68A000254CD /* DuoWanRequestPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuoWanRequestPath.h; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +227,7 @@
 			children = (
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
+				85F1EEA91BE8A68A000254CD /* DuoWanRequestPath.h */,
 				85F1EE9F1BE8499E000254CD /* DuoWanNetManager.h */,
 				85F1EEA01BE8499E000254CD /* DuoWanNetManager.m */,
 				85F1EEA21BE849B5000254CD /* TuWanNetManager.h */,

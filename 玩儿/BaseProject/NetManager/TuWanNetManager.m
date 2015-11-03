@@ -7,7 +7,7 @@
 //
 
 #import "TuWanNetManager.h"
-#define kTuWan   @"http://cache.tuwan.com/app/"
+#define kTuWanPath   @"http://cache.tuwan.com/app/"
 #define kAppid   @"appid":@1
 #define kAppver  @"appver":@2.1
 #define kClassmore   @"classmore":@"indexpic"
@@ -16,7 +16,6 @@
 
 + (id)getTuWanListType:(TuWanListType)type start:(NSInteger)start completionHandle:(void (^)(TuWanModel *, NSError *))completionHandle
 {
-    NSString *path = kTuWan;
     NSDictionary *params = nil;
     switch (type) {
         case TuWanListTypeCOS:
@@ -67,7 +66,7 @@
             default:
             break;
     }
-    path = [self percentPathWithPath:path params:params];
+    NSString *path = [self percentPathWithPath:kTuWanPath params:params];
     return [self GET:path parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([TuWanModel objectWithKeyValues:responseObj], error);
     }];

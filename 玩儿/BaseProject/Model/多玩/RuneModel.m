@@ -12,17 +12,19 @@
 //首字母大写
 + (NSString *)replacedKeyFromPropertyName121:(NSString *)propertyName
 {
-    return [propertyName firstCharLower];
+    return [propertyName firstCharUpper];
 }
 
+
 + (NSDictionary *)objectClassInArray{
-    return @{@"Purple" : [RunePurpleModel class], @"Yellow" : [RunePurpleModel class], @"Blue" : [RunePurpleModel class], @"Red" : [RunePurpleModel class]};
+    return @{@"purple" : [RunePurpleModel class], @"yellow" : [RunePurpleModel class], @"blue" : [RunePurpleModel class], @"red" : [RunePurpleModel class]};
 }
 @end
+
 @implementation RunePurpleModel
 + (NSDictionary *)replacedKeyFromPropertyName
 {
-    return @{@"img":@"Img", @"name":@"Name", @"recom":@"Recom", @"units":@"Units", @"type":@"Type",@"standby":@"Standby",@"alias":@"Alias", @"prop":@"Prop"};
+   return @{@"img": @"Img", @"name": @"Name", @"recom": @"Recom", @"units": @"Units", @"type": @"Type", @"standby": @"Standby", @"alias": @"Alias", @"prop": @"Prop"};
 }
 @end
 
