@@ -14,7 +14,7 @@
 //英雄皮肤
 #define kHeroSkinPath       @"http://box.dwstatic.com/apiHeroSkin.php"
 
-//英雄配音
+//英雄配音 **
 #define kHeroSoundPath      @"http://box.dwstatic.com/apiHeroSound.php"
 
 //英雄视频
