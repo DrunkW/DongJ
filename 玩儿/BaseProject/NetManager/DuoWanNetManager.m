@@ -54,6 +54,14 @@
     }];
 }
 
+//英雄配音
++ (id)getHeroSoundWithHeroName:(NSString *)name completionHandle:(void (^)(id, NSError *))completionHandle
+{
+    return [self GET:kHeroSoundPath parameters:@{@"hero":name,kV,kOSType,kVersion} completionHandler:^(id responseObj, NSError *error) {
+        completionHandle(responseObj, error);
+    }];
+}
+
 //英雄视频
 + (id)getHeroVideoWithTag:(NSString *)tag completionHandle:(void (^)(id, NSError *))completionHandle
 {

@@ -34,12 +34,19 @@ typedef NS_ENUM(NSUInteger, DuoWanType) {
 @interface DuoWanNetManager : BaseNetManager
 //免费+全部
 + (id)getHeroWithType:(DuoWanType)type completionHandle:(void(^)(id model, NSError *error))completionHandle;
+
 //英雄皮肤
 + (id)getHeroSkinWithHero:(NSString *)hero kCompletionHandle;
+
+//英雄配音
++ (id)getHeroSoundWithHeroName:(NSString *)name kCompletionHandle;
+
 //英雄视频
 + (id)getHeroVideoWithTag:(NSString *)tag kCompletionHandle;
+
 //英雄出装
 + (id)getHeroCZWithChampionName:(NSString *)name kCompletionHandle;
+
 //英雄资料
 + (id)getHeroDetialWithHeroName:(NSString *)name kCompletionHandle;
 

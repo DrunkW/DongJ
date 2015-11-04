@@ -33,13 +33,4 @@
         completionHandle([AlbumModel objectWithKeyValues:responseObj], error);
     }];
 }
-
-
-
-
-
-
-
-
-
 @end

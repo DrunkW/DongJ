@@ -57,6 +57,10 @@
         DDLogVerbose(@"");
     }];
     
+    /* 英雄配音 */
+    [DuoWanNetManager getHeroSoundWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+        DDLogVerbose(@"");
+    }];
     /* 出装 */
     [DuoWanNetManager getHeroCZWithChampionName:@"Braum" completionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
