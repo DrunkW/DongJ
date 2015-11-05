@@ -538,6 +538,10 @@
 		3886C0B61BD74A4A0014E661 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				857E557F1BEB0652008D0764 /* 多玩盒子 */,
+				857E55801BEB0652008D0764 /* 兔玩游戏 */,
+				857E55811BEB0652008D0764 /* 我的信息 */,
+				857E55821BEB0652008D0764 /* 喜马拉雅 */,
 				3835CFB51BD90E150024CA48 /* ViewController.h */,
 				3835CFB61BD90E150024CA48 /* ViewController.m */,
 			);
@@ -610,6 +614,34 @@
 				857E555B1BEB0378008D0764 /* AlbumModel.m */,
 				857E555C1BEB0378008D0764 /* RankingListModel.h */,
 				857E555D1BEB0378008D0764 /* RankingListModel.m */,
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		857E557F1BEB0652008D0764 /* 多玩盒子 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "多玩盒子";
+			sourceTree = "<group>";
+		};
+		857E55801BEB0652008D0764 /* 兔玩游戏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "兔玩游戏";
+			sourceTree = "<group>";
+		};
+		857E55811BEB0652008D0764 /* 我的信息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的信息";
+			sourceTree = "<group>";
+		};
+		857E55821BEB0652008D0764 /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
