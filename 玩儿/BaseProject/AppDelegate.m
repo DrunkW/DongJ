@@ -58,7 +58,7 @@
     }];
     
     /* 英雄配音 */
-    [DuoWanNetManager getHeroSoundWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+    [DuoWanNetManager getHeroSoundWithHeroName:@"Braum3" completionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
     }];
     /* 出装 */
@@ -67,7 +67,7 @@
     }];
     
     /* 资料 */
-    [DuoWanNetManager getHeroDetialWithHeroName:@"Braum" completionHandle:^(id model, NSError *error) {
+    [DuoWanNetManager getHeroDetialWithHeroName:@"Ashe" completionHandle:^(id model, NSError *error) {
         DDLogVerbose(@"");
     }];
     

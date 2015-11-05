@@ -15,6 +15,11 @@
 #define kV   @"v":@140
 #define kVersion   @"versionName":@"2.4.0"
 
+#define kChangeKey(key)    [dic setObject:[dic objectForKey:[name stringByAppendingString:key]]\
+forKey:[@"desc" stringByAppendingString:key]];\
+[dic removeObjectForKey:[name stringByAppendingString:key]]
+
+
 //把 path 写到文件头部,使用宏定义形式,方便后期维护
 
 
@@ -81,8 +86,14 @@
 //英雄资料
 + (id)getHeroDetialWithHeroName:(NSString *)name completionHandle:(void (^)(id, NSError *))completionHandle
 {
-    return [self GET:kHeroDetailPath parameters:@{kOSType,@"heroName":name,kV} completionHandler:^(id responseObj, NSError *error) {
-        completionHandle([HeroDetailModel objectWithKeyValues:responseObj], error);
+    return [self GET:kHeroDetailPath parameters:@{kOSType,@"heroName":name,kV} completionHandler:^( id responseObj, NSError *error) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:responseObj];
+        kChangeKey(@"_Q");
+        kChangeKey(@"_W");
+        kChangeKey(@"_E");
+        kChangeKey(@"_R");
+        kChangeKey(@"_B");
+        completionHandle([HeroDetailModel objectWithKeyValues:dic], error);
     }];
 }
 

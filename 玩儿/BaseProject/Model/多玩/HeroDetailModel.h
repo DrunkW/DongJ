@@ -12,12 +12,12 @@
 
 @interface HeroDetailModel : BaseModel
 @property (nonatomic, copy) NSString *ratingAttack;
-@property (nonatomic, strong) HeroDetailBraumQModel *Braum_W;
+@property (nonatomic, strong) HeroDetailBraumQModel *desc_W;
 @property (nonatomic, copy) NSString *ID;
 
 @property (nonatomic, copy) NSString *healthLevel;
 
-@property (nonatomic, strong) HeroDetailBraumQModel *Braum_Q;
+@property (nonatomic, strong) HeroDetailBraumQModel *desc_Q;
 
 @property (nonatomic, copy) NSString *quoteAuthor;
 
@@ -37,7 +37,7 @@
 
 @property (nonatomic, strong) NSArray<HeroDetailLikeModel *> *hate;
 
-@property (nonatomic, strong) HeroDetailBraumQModel *Braum_E;
+@property (nonatomic, strong) HeroDetailBraumQModel *desc_E;
 
 @property (nonatomic, copy) NSString *healthRegenBase;
 
@@ -81,7 +81,7 @@
 
 @property (nonatomic, copy) NSString *ratingDefense;
 
-@property (nonatomic, strong) HeroDetailBraumQModel *Braum_B;
+@property (nonatomic, strong) HeroDetailBraumQModel *desc_B;
 
 @property (nonatomic, copy) NSString *tips;
 
@@ -91,7 +91,7 @@
 
 @property (nonatomic, copy) NSString *ratingMagic;
 
-@property (nonatomic, strong) HeroDetailBraumQModel *Braum_R;
+@property (nonatomic, strong) HeroDetailBraumQModel *desc_R;
 
 @property (nonatomic, copy) NSString *moveSpeed;
 @property (nonatomic, copy) NSString *magicResistBase;
