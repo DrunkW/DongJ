@@ -8,7 +8,7 @@
 
 #import "AppDelegate+Category.h"
 #import <AFNetworkActivityIndicatorManager.h>
-#import "MobClick.h" 
+#import "MobClick.h"
 
 @implementation AppDelegate (Category)
 

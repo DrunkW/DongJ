@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  TuWanViewController.m
 //  BaseProject
 //
-//  Created by jiyingxin on 15/10/22.
+//  Created by tarena on 15/11/5.
 //  Copyright © 2015年 Tarena. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TuWanViewController.h"
 
-@interface ViewController ()
+@interface TuWanViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TuWanViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
