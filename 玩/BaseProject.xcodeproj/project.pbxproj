@@ -64,6 +64,8 @@
 		3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BA1BD74AE90014E661 /* BaseViewModel.m */; };
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
+		850A1FBC1BEB4518000279DF /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 850A1FBB1BEB4518000279DF /* Factory.m */; };
+		850A1FBF1BEB480A000279DF /* TuWanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 850A1FBE1BEB480A000279DF /* TuWanViewModel.m */; };
 		857E555E1BEB0378008D0764 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E55351BEB0378008D0764 /* AllHeroModel.m */; };
 		857E555F1BEB0378008D0764 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E55371BEB0378008D0764 /* BestGroupModel.m */; };
 		857E55601BEB0378008D0764 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E55391BEB0378008D0764 /* FreeHeroModel.m */; };
@@ -187,6 +189,10 @@
 		3886C0C21BD74B430014E661 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		850A1FBA1BEB4518000279DF /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		850A1FBB1BEB4518000279DF /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
+		850A1FBD1BEB480A000279DF /* TuWanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewModel.h; sourceTree = "<group>"; };
+		850A1FBE1BEB480A000279DF /* TuWanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanViewModel.m; sourceTree = "<group>"; };
 		857E55341BEB0378008D0764 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		857E55351BEB0378008D0764 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		857E55361BEB0378008D0764 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -525,6 +531,8 @@
 			isa = PBXGroup;
 			children = (
 				3804CE481BD758F10046C8C8 /* Category */,
+				850A1FBA1BEB4518000279DF /* Factory.h */,
+				850A1FBB1BEB4518000279DF /* Factory.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -680,6 +688,8 @@
 		857E55841BEB06A1008D0764 /* 兔玩游戏 */ = {
 			isa = PBXGroup;
 			children = (
+				850A1FBD1BEB480A000279DF /* TuWanViewModel.h */,
+				850A1FBE1BEB480A000279DF /* TuWanViewModel.m */,
 			);
 			path = "兔玩游戏";
 			sourceTree = "<group>";
@@ -885,6 +895,7 @@
 				857E55681BEB0378008D0764 /* HeroWeekDataModel.m in Sources */,
 				857E557E1BEB041C008D0764 /* XiMaNetManager.m in Sources */,
 				857E556C1BEB0378008D0764 /* ToolMenuModel.m in Sources */,
+				850A1FBF1BEB480A000279DF /* TuWanViewModel.m in Sources */,
 				857E557D1BEB041C008D0764 /* TuWanNetManager.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				857E558F1BEB07DB008D0764 /* MyInfoViewController.m in Sources */,
@@ -905,6 +916,7 @@
 				857E55711BEB0378008D0764 /* RankingListModel.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
+				850A1FBC1BEB4518000279DF /* Factory.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				857E55701BEB0378008D0764 /* AlbumModel.m in Sources */,
 				857E558C1BEB07BF008D0764 /* TuWanViewController.m in Sources */,

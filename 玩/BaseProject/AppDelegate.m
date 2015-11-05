@@ -21,12 +21,42 @@
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
     
-    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    [_window makeKeyAndVisible];
-    RESideMenu *sideMenu = [[RESideMenu alloc]initWithContentViewController:nil leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
-    _window.rootViewController = sideMenu;
-    
+    self.window.rootViewController = self.sideMenu;
+    [self configGlobalUIStyle];//配置全局 UI 的样式
     return YES;
+}
+
+/**配置全局 UI 的样式*/
+- (void)configGlobalUIStyle{
+/** 导航栏不透明 */
+    [[UINavigationBar appearance] setTranslucent:NO];
+/** 设置导航栏背景图 */
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg_64"] forBarMetrics:UIBarMetricsDefault];
+/** 配置导航栏题目的样式 */
+    [[UINavigationBar appearance]setTitleTextAttributes:@{NSFontAttributeName:[UIFont flatFontOfSize:kNaviTitleFontSize],NSForegroundColorAttributeName:kNaviTitleColor}];
+}
+
+
+/** 代码重构:用代码把功能实现以后,考虑代码结构如何编写可以跟加方便后期维护 */
+- (UIWindow *)window
+{
+    if (!_window) {
+        _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        [_window makeKeyAndVisible];
+    }
+    return _window;
+}
+
+- (RESideMenu *)sideMenu
+{
+    if (!_sideMenu) {
+        _sideMenu = [[RESideMenu alloc]initWithContentViewController:[TuWanViewController standardTuWanNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
+    //为 sideMenu 设置背景图.
+        _sideMenu.backgroundImage = [UIImage imageNamed:@"10994912_0800"];
+    //可以让出现菜单时,不显示状态栏
+        _sideMenu.menuPrefersStatusBarHidden = YES;
+    }
+    return _sideMenu;
 }
 
 //生成放有兔玩游戏界面的导航控制器

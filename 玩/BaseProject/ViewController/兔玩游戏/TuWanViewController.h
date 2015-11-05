@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TuWanViewController : UIViewController
-
+//内容页的首页应该是单例的,程序每次进程都只初始化一次
++ (UINavigationController *)standardTuWanNavi;
 @end

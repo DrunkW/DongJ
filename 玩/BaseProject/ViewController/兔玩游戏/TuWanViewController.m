@@ -7,6 +7,8 @@
 //
 
 #import "TuWanViewController.h"
+#import "TuWanViewModel.h"
+
 
 @interface TuWanViewController ()
 
@@ -14,9 +16,23 @@
 
 @implementation TuWanViewController
 
++ (UINavigationController *)standardTuWanNavi
+{
+    static UINavigationController *navi = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        TuWanViewController *vc = [TuWanViewController new];
+        navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    });
+    return navi;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor greenSeaColor];
+    self.title = @"Tu玩";
+    
+    [Factory addMenuItemToVc:self];
 }
 
 - (void)didReceiveMemoryWarning {

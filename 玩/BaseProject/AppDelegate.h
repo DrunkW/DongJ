@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TuWanViewController.h"
+#import <RESideMenu.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,7 +16,7 @@
 
 @property(nonatomic,getter=isOnLine) BOOL onLine; //网络状态
 
-
+@property (strong,nonatomic) RESideMenu *sideMenu;
 
 
 @end
