@@ -193,6 +193,7 @@
 		850A1FBB1BEB4518000279DF /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		850A1FBD1BEB480A000279DF /* TuWanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanViewModel.h; sourceTree = "<group>"; };
 		850A1FBE1BEB480A000279DF /* TuWanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanViewModel.m; sourceTree = "<group>"; };
+		850A1FC01BEB7B89000279DF /* DuoWanModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuoWanModel.h; sourceTree = "<group>"; };
 		857E55341BEB0378008D0764 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		857E55351BEB0378008D0764 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		857E55361BEB0378008D0764 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -584,6 +585,7 @@
 		857E55331BEB0378008D0764 /* 多玩 */ = {
 			isa = PBXGroup;
 			children = (
+				850A1FC01BEB7B89000279DF /* DuoWanModel.h */,
 				857E55341BEB0378008D0764 /* AllHeroModel.h */,
 				857E55351BEB0378008D0764 /* AllHeroModel.m */,
 				857E55361BEB0378008D0764 /* BestGroupModel.h */,

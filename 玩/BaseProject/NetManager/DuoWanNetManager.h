@@ -7,23 +7,7 @@
 //
 
 #import "BaseNetManager.h"
-#import "AllHeroModel.h"
-#import "FreeHeroModel.h"
-#import "HeroSkinModel.h"
-#import "HeroVideoModel.h"
-#import "HeroCZModel.h"
-#import "HeroDetailModel.h"
-#import "HeroGiftModel.h"
-#import "HeroChangeModel.h"
-#import "HeroWeekDataModel.h"
-#import "ToolMenuModel.h"
-#import "ZBCCategoryModel.h"
-#import "ZBItemModel.h"
-#import "ItemDetailModel.h"
-#import "GiftModel.h"
-#import "RuneModel.h"
-#import "SumAbilityModel.h"
-#import "BestGroupModel.h"
+#import "DuoWanModel.h"
 
 typedef NS_ENUM(NSUInteger, DuoWanType) {
     DuoWanTypeFree,    //免费英雄
