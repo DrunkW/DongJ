@@ -18,7 +18,7 @@ typedef NS_ENUM(NSUInteger, TuWanListType) {
     TuWanListTypeMoShou,    //魔兽
     TuWanListTypeFengBao,   //风暴
     TuWanListTypeLuShi,     //炉石
-    TuWanListTypeXingJi,    //星际
+    TuWanListTypeXingJi,    //星际2
     TuWanListTypeShouWang,  //守望
     TuWanListTypeTuPian,    //图片
     TuWanListTypeShiPing,   //视频

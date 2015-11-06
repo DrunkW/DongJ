@@ -71,6 +71,7 @@
 		8568F5641BEC49C8000AD4BF /* WMMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8568F55C1BEC49C8000AD4BF /* WMMenuView.m */; };
 		8568F5651BEC49C8000AD4BF /* WMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8568F55E1BEC49C8000AD4BF /* WMProgressView.m */; };
 		8568F5661BEC49C8000AD4BF /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8568F5611BEC49C8000AD4BF /* WMPageController.m */; };
+		8568F5691BEC7DC6000AD4BF /* TRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8568F5681BEC7DC6000AD4BF /* TRImageView.m */; };
 		857E555E1BEB0378008D0764 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E55351BEB0378008D0764 /* AllHeroModel.m */; };
 		857E555F1BEB0378008D0764 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E55371BEB0378008D0764 /* BestGroupModel.m */; };
 		857E55601BEB0378008D0764 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857E55391BEB0378008D0764 /* FreeHeroModel.m */; };
@@ -213,6 +214,8 @@
 		8568F55F1BEC49C8000AD4BF /* WMPageConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPageConst.h; sourceTree = "<group>"; };
 		8568F5601BEC49C8000AD4BF /* WMPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPageController.h; sourceTree = "<group>"; };
 		8568F5611BEC49C8000AD4BF /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
+		8568F5671BEC7DC6000AD4BF /* TRImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRImageView.h; sourceTree = "<group>"; };
+		8568F5681BEC7DC6000AD4BF /* TRImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRImageView.m; sourceTree = "<group>"; };
 		857E55341BEB0378008D0764 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
 		857E55351BEB0378008D0764 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
 		857E55361BEB0378008D0764 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
@@ -582,6 +585,8 @@
 				85EABE301BEC37EA00048505 /* TuWanListCell.m */,
 				85EABE321BEC424700048505 /* TuWanImageCell.h */,
 				85EABE331BEC424700048505 /* TuWanImageCell.m */,
+				8568F5671BEC7DC6000AD4BF /* TRImageView.h */,
+				8568F5681BEC7DC6000AD4BF /* TRImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -949,6 +954,7 @@
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				857E556E1BEB0378008D0764 /* ZBItemModel.m in Sources */,
 				8568F5651BEC49C8000AD4BF /* WMProgressView.m in Sources */,
+				8568F5691BEC7DC6000AD4BF /* TRImageView.m in Sources */,
 				857E556F1BEB0378008D0764 /* TuWanModel.m in Sources */,
 				857E55631BEB0378008D0764 /* HeroCZModel.m in Sources */,
 				857E55611BEB0378008D0764 /* GiftModel.m in Sources */,

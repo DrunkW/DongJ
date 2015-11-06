@@ -9,6 +9,7 @@
 #import "TuWanListViewController.h"
 #import "TuWanListCell.h"
 #import "TuWanViewModel.h"
+#import "TuWanImageCell.h"
 
 @interface TuWanListViewController ()
 @property (strong,nonatomic) TuWanViewModel *tuwanVM;
@@ -26,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[TuWanListCell class] forCellReuseIdentifier:@"ListCell"];
+    [self.tableView registerClass:[TuWanImageCell class] forCellReuseIdentifier:@"ImageCell"];
     
     self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
        [self.tuwanVM refreshDataCompletionHandle:^(NSError *error) {
@@ -57,9 +59,20 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if ([self.tuwanVM containImages:indexPath.row]) {
+        TuWanImageCell *cell =[tableView dequeueReusableCellWithIdentifier:@"ImageCell" ];
+        cell.titleLb.text = [self.tuwanVM titleForRowInList:indexPath.row];
+        cell.clicksNumLb.text = [self.tuwanVM clicksForRowInList:indexPath.row];
+        [cell.iconIV0.imageView setImageWithURL:[self.tuwanVM iconURLSForRowInList:indexPath.row][0] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_1"]];
+        [cell.iconIV1.imageView setImageWithURL:[self.tuwanVM iconURLSForRowInList:indexPath.row][1] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_2"]];
+        [cell.iconIV2.imageView setImageWithURL:[self.tuwanVM iconURLSForRowInList:indexPath.row][2] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_3"]];
+        
+        return cell;
+    }
     TuWanListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListCell" forIndexPath:indexPath];
     //图片没有下载完成之前显示的图片
-    [cell.iconIV setImageWithURL:[self.tuwanVM iconURLForRowInList:indexPath.row] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_5"]];
+    [cell.iconIV.imageView setImageWithURL:[self.tuwanVM iconURLForRowInList:indexPath.row] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_5"]];
     cell.titleLb.text = [self.tuwanVM titleForRowInList:indexPath.row];
     cell.longTitleLb.text = [self.tuwanVM descForRowInList:indexPath.row];
     cell.clicksNumLb.text = [self.tuwanVM clicksForRowInList:indexPath.row];
@@ -72,6 +85,11 @@ kRemoveCellSeparator
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.tuwanVM containImages:indexPath.row]?135:90;
 }
 
 /*

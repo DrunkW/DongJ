@@ -22,6 +22,9 @@
 - (NSString *)clicksForRowInList:(NSInteger)row;
 /** 返回列表中某行数据的描述 */
 - (NSString *)descForRowInList:(NSInteger)row;
+/** 通过行数,返回此行中对应的图片链接数组 */
+- (NSArray *)iconURLSForRowInList:(NSInteger)row;
+
 
 /** 滚动展示栏的图片 */
 - (NSURL *)iconURLForRowIndexPic:(NSInteger)row;
