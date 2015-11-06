@@ -1,0 +1,21 @@
+//
+//  TuWanListCell.h
+//  BaseProject
+//
+//  Created by tarena on 15/11/6.
+//  Copyright © 2015年 Tarena. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface TuWanListCell : UITableViewCell
+/** 左侧图片 */
+@property (strong,nonatomic) UIImageView *iconIV;
+/** 题目标签 */
+@property (strong,nonatomic) UILabel *titleLb;
+/** 长题目图片 */
+@property (strong,nonatomic) UILabel *longTitleLb;
+/** 点击数标签 */
+@property (strong,nonatomic) UILabel *clicksNumLb;
+
+@end
